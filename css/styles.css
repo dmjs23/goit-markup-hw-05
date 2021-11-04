@@ -4,6 +4,7 @@
   --secondary-bacgraund-color: #f5f4fa;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Releway', sans-serif;
+  --main-icon-color: #757575;
   /*dostępne grubosci Releway 700 */
   /*dostępne grubosci Roboto 400, 500, 700, 900 */
 }
@@ -28,7 +29,8 @@ ul {
   padding: 0;
 }
 .transform_color {
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), fill 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .transform_shadow {
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -108,7 +110,7 @@ ul {
 }
 .menu-item_now::after {
   position: absolute;
-  content: "";
+  content: '';
   bottom: -28px;
   left: 0;
   height: 4px;
@@ -132,13 +134,17 @@ ul {
 .head_link:not(:last-child) {
   margin-right: 50px;
 }
+.head_link {
+  fill: var(--main-icon-color);
+}
 .head_link:hover,
 .head_link:focus,
 .menu-item:hover,
 .menu-item:focus {
   color: var(--main-color);
-  --color5: var(--main-color);
+  fill: var(--main-color);
 }
+
 /* ----- END HEADER ----- */
 
 /* ----- MAIN MAIN ----- */
@@ -243,6 +249,7 @@ ul {
   background-color: var(--secondary-bacgraund-color);
   text-align: center;
   padding-top: 94px;
+  fill: #afb1b8;
 }
 .main_section_4 ul {
   display: inline-flex;
@@ -258,11 +265,16 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.icon_socjal_team:hover,
-.icon_socjal_team:focus {
-  --color3: var(--main-color);
-  --color4: #fff;
+.icon-team {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.icon-team:focus,
+.icon-team:hover {
+  background-color: var(--main-color);
+  fill: #fff;
 }
 
 .main_section_5 {
@@ -416,13 +428,17 @@ ul {
   color: #ffffff;
   margin-bottom: 20px;
 }
-.icon_footer {
-  --color4: #fff;
-  --color3: rgba(255, 255, 255, 0.1);
+.icon_footer_back {
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #fff;
 }
-.icon_footer:hover,
-.icon_footer:focus {
-  --color3: var(--main-color);
+
+.icon_footer_back:hover,
+.icon_footer_back:focus {
+  background-color: var(--main-color);
 }
 /* -----END FOOTER ----- */
 

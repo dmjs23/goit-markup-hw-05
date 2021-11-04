@@ -299,11 +299,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #afb1b8;
 }
 .icon-client:focus,
 .icon-client:hover {
   border: 1px solid var(--main-color);
-  --color4: var(--main-color);
+  fill: var(--main-color);
 }
 
 /* ----- END MAIN MAIN ----- */

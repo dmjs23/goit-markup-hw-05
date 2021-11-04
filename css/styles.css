@@ -101,9 +101,20 @@ ul {
   margin-right: 45px;
 }
 .menu-item {
+  position: relative;
   font-weight: 600;
   font-size: 14px;
   color: #212121;
+}
+.menu-item_now::after {
+  position: absolute;
+  content: "";
+  bottom: -28px;
+  left: 0;
+  height: 4px;
+  width: 53px;
+  border-bottom: 2px solid #2196f3;
+  border-radius: 2px;
 }
 .decoration_leters {
   color: var(--main-color);

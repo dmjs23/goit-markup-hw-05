@@ -31,10 +31,11 @@ ul {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .transform_shadow {
-transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .transform_button {
-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -199,20 +200,34 @@ transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),box-shadow 0.25s
 .icon_section_2 .icon {
   height: 70px;
 }
-.main_section_3 {
+.section_3_figure {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+}
+.section_3_figure figcaption {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding: 27px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .main_section_3 ul {
   display: flex;
-  margin-top: 50px;
+  justify-content: center;
 }
 .main_section_3 li {
-  margin: auto;
+  margin: 15px;
 }
-.main_section_3 div {
-  margin: auto;
-  width: 1170px;
-}
+
 .main_section_4 {
   background-color: var(--secondary-bacgraund-color);
   text-align: center;
@@ -299,7 +314,34 @@ transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),box-shadow 0.25s
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
+.primary_info {
+  overflow: hidden;
+  height: 404px;
+  position: relative;
+}
+.primary_info:hover .more_info {
+  transform: rotate(0deg);
+}
+.more_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  transform-origin: 50% 0%;
+  width: 370px;
+  height: 294px;
+  color: #fff;
+  background-color: rgba(33, 150, 243, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio_section_2 .container {
   display: flex;
   justify-content: center;

@@ -424,12 +424,13 @@ ul {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50% ,-50%);
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   background-color: #fff;
@@ -453,5 +454,6 @@ ul {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: scale(0);
 }
 /* -----END BACKDROP---- */

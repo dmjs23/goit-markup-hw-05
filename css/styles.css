@@ -316,18 +316,17 @@ ul {
 }
 .primary_info {
   overflow: hidden;
-  height: 404px;
+  height: 294px;
   position: relative;
 }
 .primary_info:hover .more_info {
-  transform: rotate(0deg);
+  transform: translate(0,0);
 }
 .more_info {
   position: absolute;
   top: 0;
   left: 0;
-  transform: rotate(180deg);
-  transform-origin: 50% 0%;
+  transform: translate(0, 100%);
   width: 370px;
   height: 294px;
   color: #fff;

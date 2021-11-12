@@ -403,12 +403,13 @@ ul {
   min-height: 252px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .end {
   color: #fff;
 }
-
+.container_foot:not(:first-child) {
+  margin-left: 70px;
+}
 .footer_adress {
   margin-left: 215px;
   margin-top: 20px;
@@ -417,10 +418,10 @@ ul {
   margin-bottom: 9px;
 }
 
-.footer_designed .container .join {
+.footer_designed .container_foot .join {
   display: flex;
 }
-.footer_designed .container h3 {
+.footer_designed .container_foot h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
